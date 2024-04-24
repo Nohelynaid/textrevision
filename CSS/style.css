@@ -21,7 +21,7 @@ body{
     text-align: right;
 }
 
-.content{
+.content, .result{
     box-sizing: content-box;
     padding: 70px;
     height: 300px;
@@ -66,7 +66,7 @@ body{
     padding-bottom: 10px;
 }
 
-#docURL{
+#docURLInput{
     border-radius: 20px;
     border-style: solid;
     border-color: #009FC1;
@@ -82,4 +82,26 @@ body{
     color: aliceblue;
     border-style: none;
     padding: 10px;
+}
+
+@media (max-width: 600px)  {
+    body{
+        background-position:45%;
+        
+    } 
+    
+
+}
+@media (max-width: 400px) {
+    .content{
+        box-sizing: border-box;
+        padding: 10px 30px 30px 30px ;
+
+    }
+
+    .quote{
+        text-align: center;
+       padding-right: 0;
+       font-weight: 600;
+    }
 }
